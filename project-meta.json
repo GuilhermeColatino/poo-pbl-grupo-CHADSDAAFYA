@@ -3,7 +3,7 @@
   "disciplina": "PROJETO DE PROGRAMAÇÃO",
   "tema_escolhido": "10",
   "linguagem": "Java",
-  "gerenciador_dependencias": "Maven / NPM / etc",
+  "gerenciador_dependencias": "Maven / JUnit",
   "integrantes": [
     {"nome": "Nome Aluno 1", "github_username": "user1"},
     {"nome": "Nome Aluno 2", "github_username": "user2"}
