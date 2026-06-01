@@ -2,8 +2,13 @@ name: Testes
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - testes
   pull_request:
+    branches:
+      - main
+      - testes
 
 jobs:
   build-e-teste:
