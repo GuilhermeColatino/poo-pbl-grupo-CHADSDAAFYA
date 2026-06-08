@@ -25,7 +25,7 @@ Software para organização de despesas entre grupos de pessoas, projetada para 
 ## Como Executar
 Abra o terminal do seu sistema operacional e execute o comando abaixo para clonar o projeto:
 ```bash
-git clone https://github.com/GuilhermeColatino/poo-pbl-grupo-temp.git
+https://github.com/GuilhermeColatino/poo-pbl-grupo-CHADSDAAFYA.git
 ```
 
 ---
