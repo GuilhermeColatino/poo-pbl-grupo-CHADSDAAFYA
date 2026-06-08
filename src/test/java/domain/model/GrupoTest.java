@@ -1,5 +1,7 @@
 package domain.model;
 
+import domain.strategy.Divisao;
+import domain.strategy.DivisaoIgual;
 import domain.value_objects.Dinheiro;
 import org.junit.jupiter.api.Test;
 import java.util.List;
@@ -23,6 +25,7 @@ public class GrupoTest {
     public void calcularSaldosDosMembrosAposUmaDespesaDivididaIgualmente() {
         //Criar o grupo e colocar 3 amigos nele
         Grupo grupo = new Grupo("grupo-1", "Viagem Fim de Ano");
+        Divisao divisao = new DivisaoIgual();
         Membro joao = new Membro("joao-id", "João");
         Membro maria = new Membro("maria-id", "Maria");
         Membro jose = new Membro("jose-id", "José");
@@ -36,7 +39,7 @@ public class GrupoTest {
         List<String> participantesIds = List.of("joao-id", "maria-id", "jose-id");
 
         // Aqui simulamos o metodo de negócio do grupo recebendo a conta
-        grupo.registrarDespesa("joao-id", valorGasto, participantesIds);
+        grupo.registrarDespesa("joao-id", valorGasto, participantesIds, divisao);
 
         // João colocou 90 e gastou 30 -> Fica com saldo positivo de R$ 60,00 (+6000)
         // Maria não colocou nada e gastou 30 -> Fica com saldo negativo de R$ 30,00 (-3000)

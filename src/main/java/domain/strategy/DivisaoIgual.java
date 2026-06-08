@@ -10,13 +10,16 @@ public class DivisaoIgual implements Divisao {
 
     @Override
     public Map<String, Dinheiro> calcular(Dinheiro valorTotal, List<String> participantes) {
-
         Map<String, Dinheiro> resultado = new HashMap<>();
 
-        int valorPorPessoa = valorTotal.getCentavos() / participantes.size();
+        if (participantes == null || participantes.isEmpty()) {
+            return resultado;
+        }
 
-        for (String participante : participantes) {
-            resultado.put(participante, new Dinheiro(valorPorPessoa));
+        Dinheiro[] partes = valorTotal.dividir(participantes.size());
+
+        for (int i = 0; i < participantes.size(); i++) {
+            resultado.put(participantes.get(i), partes[i]);
         }
 
         return resultado;
