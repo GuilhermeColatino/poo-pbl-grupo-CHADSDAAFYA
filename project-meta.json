@@ -5,7 +5,10 @@
   "linguagem": "Java",
   "gerenciador_dependencias": "Maven / JUnit",
   "integrantes": [
-    {"nome": "Nome Aluno 1", "github_username": "user1"},
-    {"nome": "Nome Aluno 2", "github_username": "user2"}
+    {"nome": "Guilherme Colatino", "github_username": "GuilhermeColatino"},
+    {"nome": "Rogério Silva", "github_username": "rogeriosilvaf"},
+    {"nome": "Lucas Eloi", "github_username": "GVBLACK23"},
+    {"nome": "Ygor Thyago", "github_username": "ygorthyago2025"},
+    {"nome": "Renato Júlio", "github_username": "001-Renato"}
   ]
 }
